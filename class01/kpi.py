@@ -1,20 +1,20 @@
-CONSTANTE_BONUS = 1000
+BONUS_CONSTANT = 1000
 
-# 1) Solicita ao usuário que digite seu nome
-user_name = input("Digite o seu nome: ")
+# 1) Asks the user to type their name
+user_name = input("Enter your name: ")
 
-# 2) Solicita ao usuário que digite o valor do seu salário
-# Converte a entrada para um número de ponto flutuante
-salary = float(input("Digite seu salário: "))
+# 2) Asks the user to type the amount of their salary
+# Converts the input to a floating-point number
+salary = float(input("Enter your salary: "))
 
-# 3) Solicita ao usuário que digite o valor do bônus recebido
-# Converte a entrada para um número de ponto flutuante
-user_bonus = float(input("Digite o bonus: "))
+# 3) Asks the user to type the amount of the bonus received
+# Converts the input to a floating-point number
+user_bonus = float(input("Enter the bonus: "))
 
-# 4) Calcule o valor do bônus final
-result = CONSTANTE_BONUS + salary * user_bonus
+# 4) Calculate the final bonus amount
+result = BONUS_CONSTANT + salary * user_bonus
 
-# ) Imprime a mensagem personalizada incluindo o nome do usuário, salário e bônus
-print(f"O usuario {user_name} possui bonus de R$ {result} ")
+# 5) Prints a customized message including the user's name, salary, and bonus
+print(f"The user {user_name} has a bonus of R$ {result} ")
 
-# Bônus: Quantos bugs e riscos você consegue identificar nesse programa?
+# Bonus: How many bugs and risks can you identify in this program?

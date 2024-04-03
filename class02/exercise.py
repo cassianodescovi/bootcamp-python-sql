@@ -1,39 +1,38 @@
-# Solicita ao usuário que digite seu nome
+# Requests the user to type their name
 try:
-    nome = input("Digite seu nome: ")
-    # Verifica se o nome está vazio
-    if len(nome) ==0:
-        raise ValueError("O nome está vazio")
-    elif any(char.isdigit() for char in nome):
-        raise ValueError("O nome não deve conter números")
+    name = input("Enter your name: ")
+    # Checks if the name is empty
+    if len(name) == 0:
+        raise ValueError("The name is empty")
+    elif any(char.isdigit() for char in name):
+        raise ValueError("The name should not contain numbers")
     else:
-        print("Nome válido", nome)
+        print("Valid name", name)
 except ValueError as e:
     print(e)
 
-# Solicita ao usuário que digite o valor do seu salário e converte para float
+# Requests the user to enter their salary amount and converts it to float
 try:
-    salario = float(input("Digite o valor de seu salário: "))
-    if salario < 0:
-        print("Por favor digite um valor positivo")
+    salary = float(input("Enter your salary amount: "))
+    if salary < 0:
+        print("Please enter a positive value")
     else:
-        print("R$", salario)
-    
+        print("R$", salary)
 except ValueError:
-    print("Entrada inválida para salário. Por favor digite um número")
+    print("Invalid entry for salary. Please enter a number")
 
-# Solicita ao usuário que digite o valor do bônus recebido e converte para float
+# Requests the user to enter the bonus received amount and converts it to float
 try:
-    bonus_recebido = float(input("Digite o valor do bônus recebido: "))
-    if bonus_recebido < 0:
-        print("Por favor, digite um valor positivo para o bônus.")
+    bonus_received = float(input("Enter the bonus received amount: "))
+    if bonus_received < 0:
+        print("Please, enter a positive value for the bonus.")
 except ValueError:
-    print("Entrada inválida para o bônus. Por favor, digite um número.")
+    print("Invalid entry for bonus. Please, enter a number.")
 
-# Assumindo uma lógica de cálculo para o bônus final e KPI
-bonus_final = bonus_recebido * 1.2  # Exemplo, ajuste conforme necessário
-kpi = (salario + bonus_final) / 1000  # Exemplo simples de KPI
+# Assuming a calculation logic for the final bonus and KPI
+final_bonus = bonus_received * 1.2  # Example, adjust as needed
+kpi = (salary + final_bonus) / 1000  # Simple KPI example
 
-# Imprime as informações para o usuário
-print(f"Seu KPI é: {kpi:.2f}")
-print(f"{nome}, seu salário é R${salario:.2f} e seu bônus final é R${bonus_final:.2f}.")
+# Prints the information to the user
+print(f"Your KPI is: {kpi:.2f}")
+print(f"{name}, your salary is R${salary:.2f} and your final bonus is R${final_bonus:.2f}.")
