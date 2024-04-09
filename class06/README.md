@@ -31,3 +31,15 @@ With all dependencies in place, you're ready to run the ETL process. Execute the
 `poetry run python pipeline.py`
 
 This command processes the JSON data in the `data/` directory, calculates sales KPIs, and outputs the results to both CSV and Parquet files.
+
+What You Will Learn
+- The fundamentals of ETL processes and their significance in data analytics.
+- How to perform data extraction from JSON files using Pandas.
+- Techniques for data transformation, including KPI calculation.
+- Saving transformed data in CSV and Parquet formats for downstream use.
+
+### Explore Further
+
+Feel encouraged to enhance the existing ETL pipeline with additional data transformations or by incorporating more complex KPIs. Explore the vast functionality offered by Pandas for data manipulation and consider working with different data formats to broaden your data processing skills.
+
+Happy coding and data exploring!
