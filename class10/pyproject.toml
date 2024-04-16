@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "class10"
+version = "0.1.0"
+description = ""
+authors = ["cassianodescovi <cassianodescovi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12.1"
+sqlalchemy = "^2.0.29"
+fastapi = "^0.110.1"
+pydantic = {extras = ["email"], version = "^2.7.0"}
+psycopg2 = "^2.9.9"
+psycopg2-binary = "^2.9.9"
+pandas = "^2.2.2"
+streamlit = "^1.33.0"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
